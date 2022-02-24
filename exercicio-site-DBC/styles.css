@@ -1,3 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 header {
-    background-color: black;
+    background: url(patternECOStransparente.png), linear-gradient(to bottom right, #295ba7, #78b454);
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+}
+
+header img {
+    width: 105px;
+    height: 36px;
+    margin-right: 1%;
+    vertical-align: middle;
+    border-style: none;
+    margin-left: 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li {
+    display: inline;
+    color: white;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+i {
+    max-width: 50%;
+    padding-left: 15px;
+    color: white;
+}
+
+.menu-inicio {
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 0;
+    box-sizing: border-box;
+    text-align: -webkit-match-parent;
+}
+
+#searchbar {
+    padding:10px;
+    margin: 15px;
+    width: 300px;
+    border-radius: 10px;
+    opacity: 0.3;
+    display: flex;
+}
+
+#icone-pesquisa {
+    position: absolute;
+    top: 25px;
+    left: 540px;
+    font-size: 20px;
+    opacity: 0.3;
+}
+
+.icone-notificacoes {
+    position: absolute;
+    right: 100px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.icone-user {
+    position: absolute;
+    right: 50px;
+    cursor: pointer;
+    font-size: 20px;
 }
