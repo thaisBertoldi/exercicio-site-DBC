@@ -36,6 +36,17 @@ nav {
   flex-direction: row;
 }
 
+nav:hover {
+  background: -webkit-gradient(
+    left top,
+    right top,
+    color-stop(0%, #2ba962),
+    color-stop(98%, #2e6a99),
+    color-stop(100%, #2e6a99)
+  );
+  background: linear-gradient(to right, #2ba962 0%, #2e6a99 98%, #2e6a99 100%);
+}
+
 .menu-inicio {
   font-weight: bold;
   font-size: 20px;
@@ -86,8 +97,12 @@ nav {
   color: white;
   position: absolute;
   margin: 0 auto;
-  right: 100px;
-  top: 20px;
+  right: 135px;
+  top: 22px;
   cursor: pointer;
   font-size: 30px;
+}
+
+#icone-angle-down {
+  font-size: 20px;
 }
