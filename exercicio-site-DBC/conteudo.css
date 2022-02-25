@@ -144,6 +144,11 @@ img {
   background: linear-gradient(to right, #2ba962 0%, #2e6a99 98%, #2e6a99 100%);
 }
 
+.conteudo-icone:hover,
+.conteudo-icone:hover i {
+  color: #fff !important;
+}
+
 .data-emoji-noticia {
   justify-content: space-between;
   display: flex;
