@@ -79,7 +79,7 @@ nav:hover {
 #icone-menu {
   content: "\f2bd";
   color: white !important;
-  right: 0px;
+  right: 0;
   top: 20px;
 }
 
