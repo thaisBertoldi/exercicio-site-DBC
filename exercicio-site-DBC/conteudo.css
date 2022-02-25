@@ -43,7 +43,6 @@ img {
   height: 45px;
   background-color: #fff;
   border-bottom: 1px solid #d9d9d9cb;
-  margin-top: 80px;
 }
 .barra-lateral-titulo {
   width: 16px;
@@ -188,7 +187,7 @@ img {
 .container-aniversario {
   display: flex;
   flex-direction: column;
-  margin-top: 5px;
+  margin-top: 16px;
 }
 .conteudo-aniversario {
   min-height: 100px;
