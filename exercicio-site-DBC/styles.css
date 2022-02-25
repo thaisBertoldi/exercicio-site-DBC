@@ -118,7 +118,28 @@ nav {
     margin-top: 15px;
 }
 
-.container-aniversario {  
+.container-aniversario {
+    display: flex;
+    flex-direction: column;
+}
+
+.foto-nome {
+    display: flex;
+    flex-direction: row;
+}
+
+.icone-foto {
+    width: 50%;
+}
+
+.nome p { 
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+/* .container-aniversario {  
     display: grid;
     grid-template-columns: 1fr 2.0fr 0.6fr;
     grid-template-rows: 0.2fr 0.5fr 2.3fr;
@@ -153,6 +174,6 @@ nav {
       font-size: 20px;
 }
   
-  .bolo-e-data { grid-area: bolo-e-data; }
+  .bolo-e-data { grid-area: bolo-e-data; } */
   
   
