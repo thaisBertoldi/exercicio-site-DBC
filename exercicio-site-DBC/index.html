@@ -5,21 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="imagex/png" href="./img/ecos.ico">
+
     <title>Ecos DBC</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <link rel=" stylesheet" href="styles.css">
     <link rel="stylesheet" href="conteudo.css">
-    <style>
-        @media (max-width: 1000px) {
-            .menu-inicio, #searchbar, #icone-pesquisa, .icone-notificacoes, .icone-user {
-            display:none;
-            }
-        }
-    </style>     
+
 </head>
 
 <body>
-    <header>
+    <header class="cabecalho">
         <img src="./new_ecos_white_2021.png" alt="logo-DBC" id="icone-dbc">
         <nav>
             <div class="menu-inicio">
@@ -28,17 +24,20 @@
                     <li>Inicio</li>
                 </ul>
             </div>
-            <div>
-                <input id="searchbar" type="text" name="search" placeholder="Pesquisar">
-                <i class="fa-solid fa-magnifying-glass" id="icone-pesquisa"></i>
-            </div>
+        </nav>
+        <div class="barra-pesquisa">
+            <input id="searchbar" type="text" name="search" placeholder="Pesquisar">
+            <i class="fa-solid fa-magnifying-glass" id="icone-pesquisa"></i>
+        </div>
+        <div class="icones-user-notificacao">
             <div class="icone-notificacoes">
                 <i class="fa-solid fa-bell"></i>
             </div>
             <div class="icone-user">
                 <i class="fa-solid fa-circle-user"></i>
             </div>
-        </nav>
+        </div>
+
         <div>
     </header>
     <div class="background-container">
@@ -47,7 +46,7 @@
                 <section class="noticias-recentes">
                     <div class="conteudo-titulo">
                         <h3 class="titulo-noticia">Notícias Recentes</h3>
-                        <div class="barra-latera-titulo"></div>
+                        <div class="barra-lateral-titulo"></div>
                     </div>
                     <div class="conteudo-noticias primeira-noticia">
                         <div class="noticia">
@@ -68,12 +67,18 @@
                             <div class="data-emoji-noticia">
                                 <span class="data-noticia">00/00/0000</span>
                                 <div class="emoji-noticia">
-                                    <span><i class="fa-solid fa-heart"></i></span>
-                                    <span>9</span>
-                                    <span>❤</span>
-                                    <span>9</span>
-                                    <span>❤</span>
-                                    <span>9</span>
+                                    <div class="like">
+                                        <span class="emoji-coracao"><i class="fa-solid fa-heart"></i></span>
+                                        <span class="contador-emoji">9</span>
+                                    </div>
+                                    <div class="comentario">
+                                        <span class="emoji-comentario"><i class="fa-solid fa-comment"></i></span>
+                                        <span class="contador-emoji">9</span>
+                                    </div>
+                                    <div class="visualizacao">
+                                        <span class="emoji-visualizacao"><i class="fa-solid fa-eye"></i></span>
+                                        <span class="contador-emoji">9</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -98,162 +103,311 @@
                             <div class="data-emoji-noticia">
                                 <span class="data-noticia">00/00/0000</span>
                                 <div class="emoji-noticia">
-                                    <span>❤</span>
-                                    <span>9</span>
-                                    <span>❤</span>
-                                    <span>9</span>
-                                    <span>❤</span>
-                                    <span>9</span>
+                                    <div class="like">
+                                        <span class="emoji-coracao"><i class="fa-solid fa-heart"></i></span>
+                                        <span class="contador-emoji">9</span>
+                                    </div>
+                                    <div class="comentario">
+                                        <span class="emoji-comentario"><i class="fa-solid fa-comment"></i></span>
+                                        <span class="contador-emoji">9</span>
+                                    </div>
+                                    <div class="visualizacao">
+                                        <span class="emoji-visualizacao"><i class="fa-solid fa-eye"></i></span>
+                                        <span class="contador-emoji">9</span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="conteudo-noticias">
-                        <div class="noticia">
-                            <img src="./img/noticia01.png" alt="">
-                        </div>
-                        <div class="texto-noticia">
-                            <div class="conteudo-noticia-titulo">
-                                <h4 class="titulo-secundario-noticia">Workshop DBC Impact | Estamos de volta!</h4>
-                            </div>
-                            <div class="noticia-paragrafo">
-                                <p>
-                                    É com muita alegria que divulgamos o primeiro DBC Impact de 2022, agora em parceria
-                                    com o Instituto Caldeira! Nosso colaborador J. Maurício V. L. Júnior irá
-                                    compartilhar sua trajetória empreendendo enquanto funcionário na DBC, além de
-                                    apresentar o case Vitrines Virtuais e as tecnologias que utilizamos: RDS
-                                </p>
-                            </div>
-                            <div class="data-emoji-noticia">
-                                <span class="data-noticia">00/00/0000</span>
-                                <div class="emoji-noticia">
-                                    <span>❤</span>
-                                    <span>9</span>
-                                    <span>❤</span>
-                                    <span>9</span>
-                                    <span>❤</span>
-                                    <span>9</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="conteudo-noticias">
-                        <div class="noticia">
-                            <img src="./img/noticia01.png" alt="">
-                        </div>
-                        <div class="texto-noticia">
-                            <div class="conteudo-noticia-titulo">
-                                <h4 class="titulo-secundario-noticia">Workshop DBC Impact | Estamos de volta!</h4>
-                            </div>
-                            <div class="noticia-paragrafo">
-                                <p>
-                                    É com muita alegria que divulgamos o primeiro DBC Impact de 2022, agora em parceria
-                                    com o Instituto Caldeira! Nosso colaborador J. Maurício V. L. Júnior irá
-                                    compartilhar sua trajetória empreendendo enquanto funcionário na DBC, além de
-                                    apresentar o case Vitrines Virtuais e as tecnologias que utilizamos: RDS
-                                </p>
-                            </div>
-                            <div class="data-emoji-noticia">
-                                <span class="data-noticia">00/00/0000</span>
-                                <div class="emoji-noticia">
-                                    <span>❤</span>
-                                    <span>9</span>
-                                    <span>❤</span>
-                                    <span>9</span>
-                                    <span>❤</span>
-                                    <span>9</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="conteudo-noticias">
-                        <div class="noticia">
-                            <img src="./img/noticia01.png" alt="">
-                        </div>
-                        <div class="texto-noticia">
-                            <div class="conteudo-noticia-titulo">
-                                <h4 class="titulo-secundario-noticia">Workshop DBC Impact | Estamos de volta!</h4>
-                            </div>
-                            <div class="noticia-paragrafo">
-                                <p>
-                                    É com muita alegria que divulgamos o primeiro DBC Impact de 2022, agora em parceria
-                                    com o Instituto Caldeira! Nosso colaborador J. Maurício V. L. Júnior irá
-                                    compartilhar sua trajetória empreendendo enquanto funcionário na DBC, além de
-                                    apresentar o case Vitrines Virtuais e as tecnologias que utilizamos: RDS
-                                </p>
-                            </div>
-                            <div class="data-emoji-noticia">
-                                <span class="data-noticia">00/00/0000</span>
-                                <div class="emoji-noticia">
-                                    <span>❤</span>
-                                    <span>9</span>
-                                    <span>❤</span>
-                                    <span>9</span>
-                                    <span>❤</span>
-                                    <span>9</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="conteudo-noticias">
-                        <div class="noticia">
-                            <img src="./img/noticia01.png" alt="">
-                        </div>
-                        <div class="texto-noticia">
-                            <div class="conteudo-noticia-titulo">
-                                <h4 class="titulo-secundario-noticia">Workshop DBC Impact | Estamos de volta!</h4>
-                            </div>
-                            <div class="noticia-paragrafo">
-                                <p>
-                                    É com muita alegria que divulgamos o primeiro DBC Impact de 2022, agora em parceria
-                                    com o Instituto Caldeira! Nosso colaborador J. Maurício V. L. Júnior irá
-                                    compartilhar sua trajetória empreendendo enquanto funcionário na DBC, além de
-                                    apresentar o case Vitrines Virtuais e as tecnologias que utilizamos: RDS
-                                </p>
-                            </div>
-                            <div class="data-emoji-noticia">
-                                <span class="data-noticia">00/00/0000</span>
-                                <div class="emoji-noticia">
-                                    <span>❤</span>
-                                    <span>9</span>
-                                    <span>❤</span>
-                                    <span>9</span>
-                                    <span>❤</span>
-                                    <span>9</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="conteudo-noticias">
-                        <div class="noticia">
-                            <img src="./img/noticia01.png" alt="">
-                        </div>
-                        <div class="texto-noticia">
-                            <div class="conteudo-noticia-titulo">
-                                <h4 class="titulo-secundario-noticia">Workshop DBC Impact | Estamos de volta!</h4>
-                            </div>
-                            <div class="noticia-paragrafo">
-                                <p>
-                                    É com muita alegria que divulgamos o primeiro DBC Impact de 2022, agora em parceria
-                                    com o Instituto Caldeira! Nosso colaborador J. Maurício V. L. Júnior irá
-                                    compartilhar sua trajetória empreendendo enquanto funcionário na DBC, além de
-                                    apresentar o case Vitrines Virtuais e as tecnologias que utilizamos: RDS
-                                </p>
-                            </div>
-                            <div class="data-emoji-noticia">
-                                <span class="data-noticia">00/00/0000</span>
-                                <div class="emoji-noticia">
-                                    <span>❤</span>
-                                    <span>9</span>
-                                    <span>❤</span>
-                                    <span>9</span>
-                                    <span>❤</span>
-                                    <span>9</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
+                        </div>
+                    </div>
+                    <div class="conteudo-noticias">
+                        <div class="noticia">
+                            <img src="./img/noticia01.png" alt="">
+                        </div>
+                        <div class="texto-noticia">
+                            <div class="conteudo-noticia-titulo">
+                                <h4 class="titulo-secundario-noticia">Workshop DBC Impact | Estamos de volta!</h4>
+                            </div>
+                            <div class="noticia-paragrafo">
+                                <p>
+                                    É com muita alegria que divulgamos o primeiro DBC Impact de 2022, agora em parceria
+                                    com o Instituto Caldeira! Nosso colaborador J. Maurício V. L. Júnior irá
+                                    compartilhar sua trajetória empreendendo enquanto funcionário na DBC, além de
+                                    apresentar o case Vitrines Virtuais e as tecnologias que utilizamos: RDS
+                                </p>
+                            </div>
+                            <div class="data-emoji-noticia">
+                                <span class="data-noticia">00/00/0000</span>
+                                <div class="emoji-noticia">
+                                    <div class="like">
+                                        <span class="emoji-coracao"><i class="fa-solid fa-heart"></i></span>
+                                        <span class="contador-emoji">9</span>
+                                    </div>
+                                    <div class="comentario">
+                                        <span class="emoji-comentario"><i class="fa-solid fa-comment"></i></span>
+                                        <span class="contador-emoji">9</span>
+                                    </div>
+                                    <div class="visualizacao">
+                                        <span class="emoji-visualizacao"><i class="fa-solid fa-eye"></i></span>
+                                        <span class="contador-emoji">9</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="conteudo-noticias">
+                        <div class="noticia">
+                            <img src="./img/noticia01.png" alt="">
+                        </div>
+                        <div class="texto-noticia">
+                            <div class="conteudo-noticia-titulo">
+                                <h4 class="titulo-secundario-noticia">Workshop DBC Impact | Estamos de volta!</h4>
+                            </div>
+                            <div class="noticia-paragrafo">
+                                <p>
+                                    É com muita alegria que divulgamos o primeiro DBC Impact de 2022, agora em parceria
+                                    com o Instituto Caldeira! Nosso colaborador J. Maurício V. L. Júnior irá
+                                    compartilhar sua trajetória empreendendo enquanto funcionário na DBC, além de
+                                    apresentar o case Vitrines Virtuais e as tecnologias que utilizamos: RDS
+                                </p>
+                            </div>
+                            <div class="data-emoji-noticia">
+                                <span class="data-noticia">00/00/0000</span>
+                                <div class="emoji-noticia">
+                                    <div class="like">
+                                        <span class="emoji-coracao"><i class="fa-solid fa-heart"></i></span>
+                                        <span class="contador-emoji">9</span>
+                                    </div>
+                                    <div class="comentario">
+                                        <span class="emoji-comentario"><i class="fa-solid fa-comment"></i></span>
+                                        <span class="contador-emoji">9</span>
+                                    </div>
+                                    <div class="visualizacao">
+                                        <span class="emoji-visualizacao"><i class="fa-solid fa-eye"></i></span>
+                                        <span class="contador-emoji">9</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="conteudo-noticias">
+                        <div class="noticia">
+                            <img src="./img/noticia01.png" alt="">
+                        </div>
+                        <div class="texto-noticia">
+                            <div class="conteudo-noticia-titulo">
+                                <h4 class="titulo-secundario-noticia">Workshop DBC Impact | Estamos de volta!</h4>
+                            </div>
+                            <div class="noticia-paragrafo">
+                                <p>
+                                    É com muita alegria que divulgamos o primeiro DBC Impact de 2022, agora em parceria
+                                    com o Instituto Caldeira! Nosso colaborador J. Maurício V. L. Júnior irá
+                                    compartilhar sua trajetória empreendendo enquanto funcionário na DBC, além de
+                                    apresentar o case Vitrines Virtuais e as tecnologias que utilizamos: RDS
+                                </p>
+                            </div>
+                            <div class="data-emoji-noticia">
+                                <span class="data-noticia">00/00/0000</span>
+                                <div class="emoji-noticia">
+                                    <div class="like">
+                                        <span class="emoji-coracao"><i class="fa-solid fa-heart"></i></span>
+                                        <span class="contador-emoji">9</span>
+                                    </div>
+                                    <div class="comentario">
+                                        <span class="emoji-comentario"><i class="fa-solid fa-comment"></i></span>
+                                        <span class="contador-emoji">9</span>
+                                    </div>
+                                    <div class="visualizacao">
+                                        <span class="emoji-visualizacao"><i class="fa-solid fa-eye"></i></span>
+                                        <span class="contador-emoji">9</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="conteudo-noticias">
+                        <div class="noticia">
+                            <img src="./img/noticia01.png" alt="">
+                        </div>
+                        <div class="texto-noticia">
+                            <div class="conteudo-noticia-titulo">
+                                <h4 class="titulo-secundario-noticia">Workshop DBC Impact | Estamos de volta!</h4>
+                            </div>
+                            <div class="noticia-paragrafo">
+                                <p>
+                                    É com muita alegria que divulgamos o primeiro DBC Impact de 2022, agora em parceria
+                                    com o Instituto Caldeira! Nosso colaborador J. Maurício V. L. Júnior irá
+                                    compartilhar sua trajetória empreendendo enquanto funcionário na DBC, além de
+                                    apresentar o case Vitrines Virtuais e as tecnologias que utilizamos: RDS
+                                </p>
+                            </div>
+                            <div class="data-emoji-noticia">
+                                <span class="data-noticia">00/00/0000</span>
+                                <div class="emoji-noticia">
+                                    <div class="like">
+                                        <span class="emoji-coracao"><i class="fa-solid fa-heart"></i></span>
+                                        <span class="contador-emoji">9</span>
+                                    </div>
+                                    <div class="comentario">
+                                        <span class="emoji-comentario"><i class="fa-solid fa-comment"></i></span>
+                                        <span class="contador-emoji">9</span>
+                                    </div>
+                                    <div class="visualizacao">
+                                        <span class="emoji-visualizacao"><i class="fa-solid fa-eye"></i></span>
+                                        <span class="contador-emoji">9</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="conteudo-noticias">
+                        <div class="noticia">
+                            <img src="./img/noticia01.png" alt="">
+                        </div>
+                        <div class="texto-noticia">
+                            <div class="conteudo-noticia-titulo">
+                                <h4 class="titulo-secundario-noticia">Workshop DBC Impact | Estamos de volta!</h4>
+                            </div>
+                            <div class="noticia-paragrafo">
+                                <p>
+                                    É com muita alegria que divulgamos o primeiro DBC Impact de 2022, agora em parceria
+                                    com o Instituto Caldeira! Nosso colaborador J. Maurício V. L. Júnior irá
+                                    compartilhar sua trajetória empreendendo enquanto funcionário na DBC, além de
+                                    apresentar o case Vitrines Virtuais e as tecnologias que utilizamos: RDS
+                                </p>
+                            </div>
+                            <div class="data-emoji-noticia">
+                                <span class="data-noticia">00/00/0000</span>
+                                <div class="emoji-noticia">
+                                    <div class="like">
+                                        <span class="emoji-coracao"><i class="fa-solid fa-heart"></i></span>
+                                        <span class="contador-emoji">9</span>
+                                    </div>
+                                    <div class="comentario">
+                                        <span class="emoji-comentario"><i class="fa-solid fa-comment"></i></span>
+                                        <span class="contador-emoji">9</span>
+                                    </div>
+                                    <div class="visualizacao">
+                                        <span class="emoji-visualizacao"><i class="fa-solid fa-eye"></i></span>
+                                        <span class="contador-emoji">9</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="conteudo-noticias">
+                        <div class="noticia">
+                            <img src="./img/noticia01.png" alt="">
+                        </div>
+                        <div class="texto-noticia">
+                            <div class="conteudo-noticia-titulo">
+                                <h4 class="titulo-secundario-noticia">Workshop DBC Impact | Estamos de volta!</h4>
+                            </div>
+                            <div class="noticia-paragrafo">
+                                <p>
+                                    É com muita alegria que divulgamos o primeiro DBC Impact de 2022, agora em parceria
+                                    com o Instituto Caldeira! Nosso colaborador J. Maurício V. L. Júnior irá
+                                    compartilhar sua trajetória empreendendo enquanto funcionário na DBC, além de
+                                    apresentar o case Vitrines Virtuais e as tecnologias que utilizamos: RDS
+                                </p>
+                            </div>
+                            <div class="data-emoji-noticia">
+                                <span class="data-noticia">00/00/0000</span>
+                                <div class="emoji-noticia">
+                                    <div class="like">
+                                        <span class="emoji-coracao"><i class="fa-solid fa-heart"></i></span>
+                                        <span class="contador-emoji">9</span>
+                                    </div>
+                                    <div class="comentario">
+                                        <span class="emoji-comentario"><i class="fa-solid fa-comment"></i></span>
+                                        <span class="contador-emoji">9</span>
+                                    </div>
+                                    <div class="visualizacao">
+                                        <span class="emoji-visualizacao"><i class="fa-solid fa-eye"></i></span>
+                                        <span class="contador-emoji">9</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="conteudo-noticias">
+                        <div class="noticia">
+                            <img src="./img/noticia01.png" alt="">
+                        </div>
+                        <div class="texto-noticia">
+                            <div class="conteudo-noticia-titulo">
+                                <h4 class="titulo-secundario-noticia">Workshop DBC Impact | Estamos de volta!</h4>
+                            </div>
+                            <div class="noticia-paragrafo">
+                                <p>
+                                    É com muita alegria que divulgamos o primeiro DBC Impact de 2022, agora em parceria
+                                    com o Instituto Caldeira! Nosso colaborador J. Maurício V. L. Júnior irá
+                                    compartilhar sua trajetória empreendendo enquanto funcionário na DBC, além de
+                                    apresentar o case Vitrines Virtuais e as tecnologias que utilizamos: RDS
+                                </p>
+                            </div>
+                            <div class="data-emoji-noticia">
+                                <span class="data-noticia">00/00/0000</span>
+                                <div class="emoji-noticia">
+                                    <div class="like">
+                                        <span class="emoji-coracao"><i class="fa-solid fa-heart"></i></span>
+                                        <span class="contador-emoji">9</span>
+                                    </div>
+                                    <div class="comentario">
+                                        <span class="emoji-comentario"><i class="fa-solid fa-comment"></i></span>
+                                        <span class="contador-emoji">9</span>
+                                    </div>
+                                    <div class="visualizacao">
+                                        <span class="emoji-visualizacao"><i class="fa-solid fa-eye"></i></span>
+                                        <span class="contador-emoji">9</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="conteudo-noticias">
+                        <div class="noticia">
+                            <img src="./img/noticia01.png" alt="">
+                        </div>
+                        <div class="texto-noticia">
+                            <div class="conteudo-noticia-titulo">
+                                <h4 class="titulo-secundario-noticia">Workshop DBC Impact | Estamos de volta!</h4>
+                            </div>
+                            <div class="noticia-paragrafo">
+                                <p>
+                                    É com muita alegria que divulgamos o primeiro DBC Impact de 2022, agora em parceria
+                                    com o Instituto Caldeira! Nosso colaborador J. Maurício V. L. Júnior irá
+                                    compartilhar sua trajetória empreendendo enquanto funcionário na DBC, além de
+                                    apresentar o case Vitrines Virtuais e as tecnologias que utilizamos: RDS
+                                </p>
+                            </div>
+                            <div class="data-emoji-noticia">
+                                <span class="data-noticia">00/00/0000</span>
+                                <div class="emoji-noticia">
+                                    <div class="like">
+                                        <span class="emoji-coracao"><i class="fa-solid fa-heart"></i></span>
+                                        <span class="contador-emoji">9</span>
+                                    </div>
+                                    <div class="comentario">
+                                        <span class="emoji-comentario"><i class="fa-solid fa-comment"></i></span>
+                                        <span class="contador-emoji">9</span>
+                                    </div>
+                                    <div class="visualizacao">
+                                        <span class="emoji-visualizacao"><i class="fa-solid fa-eye"></i></span>
+                                        <span class="contador-emoji">9</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
                 </section>
                 <div class="menu-e-aniversario">
                     <section class="sistemas-e-processos">
@@ -270,62 +424,161 @@
                                 </div>
                                 <div class="menu-icone">
                                     <div class="conteudo-icone">
-                                        <i class="fa-solid fa-users"></i>
-                                        <span class="texto-icone">Contatos</span>
+                                        <i class="fa-solid fa-clock"></i>
+                                        <span class="texto-icone">Portal Metadados</span>
                                     </div>
                                 </div>
                                 <div class="menu-icone">
                                     <div class="conteudo-icone">
-                                        <i class="fa-solid fa-users"></i>
-                                        <span class="texto-icone">Contatos</span>
+                                        <i class="fa-solid fa-brain"></i>
+                                        <span class="texto-icone">BI - DBC</span>
                                     </div>
                                 </div>
                                 <div class="menu-icone">
                                     <div class="conteudo-icone">
-                                        <i class="fa-solid fa-users"></i>
-                                        <span class="texto-icone">Contatos</span>
+                                        <i class="fa-solid fa-envelope"></i>
+                                        <span class="texto-icone">Emails</span>
                                     </div>
                                 </div>
                                 <div class="menu-icone">
                                     <div class="conteudo-icone">
-                                        <i class="fa-solid fa-users"></i>
-                                        <span class="texto-icone">Contatos</span>
+                                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                                        <span class="texto-icone">CSC</span>
                                     </div>
                                 </div>
                                 <div class="menu-icone">
                                     <div class="conteudo-icone">
-                                        <i class="fa-solid fa-users"></i>
-                                        <span class="texto-icone">Contatos</span>
+                                        <i class="fa-solid fa-folder"></i>
+                                        <span class="texto-icone">Documentos DBC</span>
                                     </div>
                                 </div>
                                 <div class="menu-icone">
                                     <div class="conteudo-icone">
-                                        <i class="fa-solid fa-users"></i>
-                                        <span class="texto-icone">Contatos</span>
+                                        <i class="fa-solid fa-cloud"></i>
+                                        <span class="texto-icone">File Cloud</span>
                                     </div>
                                 </div>
-                                <div class="menu-icone">
-                                    <div class="conteudo-icone">
-                                        <i class="fa-solid fa-users"></i>
-                                        <span class="texto-icone">Contatos</span>
-                                    </div>
-                                </div>
+
                             </div>
                         </nav>
                     </section>
-                    <section class="aniversarios-recentes">
-                        <div class="container-aniversario">
-                            <div class="ultimos-aniversarios">
-                                <p>Últimos aniversários</p>
-                            </div>
-                            <div class="foto-nome">
-                                <div class="icone-foto">
-                                    <img src="../exercicio-site-DBC/img/esquilo.png">
+                    <div class="aniversarios">
+                        <section class="aniversarios-geral aniversarios-recentes">
+                            <div class="container-aniversario">
+                                <div class="conteudo-titulo">
+                                    <h3 class="titulo-noticia">Últimos Aniversários</h3>
                                 </div>
-                                <div class="nome-aniversariante">
-                                    <div class="nome">
-                                        <p>Gustavo Tal e Coisa</p>
-                                        <span>email@talecoisa</span>
+                                <div class="conteudo-aniversario">
+                                    <div class="conteudo-foto-aniversariante">
+                                        <img class="foto-aniversariante" src="./img/no-user.jpeg" alt="">
+                                    </div>
+                                    <div class="conteudo-aniversariante">
+                                        <div class="aniversariante-nome">
+                                            <p>Usuário Padrão</p>
+                                        </div>
+                                        <div class="aniversariante-email">
+                                            <p>email@padrão.com.br</p>
+                                        </div>
+                                        <div class="bolo-e-data">
+                                            <div class="bolo-icone">
+                                                <i class="fa-solid fa-cake-candles"></i>
+                                                <span>17 de fevereiro</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="conteudo-aniversario">
+                                    <div class="conteudo-foto-aniversariante">
+                                        <img class="foto-aniversariante" src="./img/no-user.jpeg" alt="">
+                                    </div>
+                                    <div class="conteudo-aniversariante">
+                                        <div class="aniversariante-nome">
+                                            <p>Usuário Padrão</p>
+                                        </div>
+                                        <div class="aniversariante-email">
+                                            <p>email@padrão.com.br</p>
+                                        </div>
+                                        <div class="bolo-e-data">
+                                            <div class="bolo-icone">
+                                                <i class="fa-solid fa-cake-candles"></i>
+                                                <span>17 de fevereiro</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="conteudo-aniversario">
+                                    <div class="conteudo-foto-aniversariante">
+                                        <img class="foto-aniversariante" src="./img/no-user.jpeg" alt="">
+                                    </div>
+                                    <div class="conteudo-aniversariante">
+                                        <div class="aniversariante-nome">
+                                            <p>Usuário Padrão</p>
+                                        </div>
+                                        <div class="aniversariante-email">
+                                            <p>email@padrão.com.br</p>
+                                        </div>
+                                        <div class="bolo-e-data">
+                                            <div class="bolo-icone">
+                                                <i class="fa-solid fa-cake-candles"></i>
+                                                <span>17 de fevereiro</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="conteudo-aniversario">
+                                    <div class="conteudo-foto-aniversariante">
+                                        <img class="foto-aniversariante" src="./img/no-user.jpeg" alt="">
+                                    </div>
+                                    <div class="conteudo-aniversariante">
+                                        <div class="aniversariante-nome">
+                                            <p>Usuário Padrão</p>
+                                        </div>
+                                        <div class="aniversariante-email">
+                                            <p>email@padrão.com.br</p>
+                                        </div>
+                                        <div class="bolo-e-data">
+                                            <div class="bolo-icone">
+                                                <i class="fa-solid fa-cake-candles"></i>
+                                                <span>17 de fevereiro</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="conteudo-aniversario">
+                                    <div class="conteudo-foto-aniversariante">
+                                        <img class="foto-aniversariante" src="./img/no-user.jpeg" alt="">
+                                    </div>
+                                    <div class="conteudo-aniversariante">
+                                        <div class="aniversariante-nome">
+                                            <p>Usuário Padrão</p>
+                                        </div>
+                                        <div class="aniversariante-email">
+                                            <p>email@padrão.com.br</p>
+                                        </div>
+                                        <div class="bolo-e-data">
+                                            <div class="bolo-icone">
+                                                <i class="fa-solid fa-cake-candles"></i>
+                                                <span>17 de fevereiro</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="aniversarios-proximos">
+                            <div class="conteudo-titulo">
+                                <h3 class="titulo-noticia">Aniversários de Hoje</h3>
+                            </div>
+                            <div class="conteudo-aniversario">
+                                <div class="conteudo-foto-aniversariante">
+                                    <img class="foto-aniversariante" src="./img/no-user.jpeg" alt="">
+                                </div>
+                                <div class="conteudo-aniversariante">
+                                    <div class="aniversariante-nome">
+                                        <p>Usuário Padrão</p>
+                                    </div>
+                                    <div class="aniversariante-email">
+                                        <p>email@padrão.com.br</p>
                                     </div>
                                     <div class="bolo-e-data">
                                         <div class="bolo-icone">
@@ -335,14 +588,16 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="foto-nome">
-                                <div class="icone-foto">
-                                    <img src="../exercicio-site-DBC/img/esquilo.png">
+                            <div class="conteudo-aniversario">
+                                <div class="conteudo-foto-aniversariante">
+                                    <img class="foto-aniversariante" src="./img/no-user.jpeg" alt="">
                                 </div>
-                                <div class="nome-aniversariante">
-                                    <div class="nome">
-                                        <p>Gustavo Tal e Coisa</p>
-                                        <span>email@talecoisa</span>
+                                <div class="conteudo-aniversariante">
+                                    <div class="aniversariante-nome">
+                                        <p>Usuário Padrão</p>
+                                    </div>
+                                    <div class="aniversariante-email">
+                                        <p>email@padrão.com.br</p>
                                     </div>
                                     <div class="bolo-e-data">
                                         <div class="bolo-icone">
@@ -352,14 +607,16 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="foto-nome">
-                                <div class="icone-foto">
-                                    <img src="../exercicio-site-DBC/img/esquilo.png">
+                            <div class="conteudo-aniversario">
+                                <div class="conteudo-foto-aniversariante">
+                                    <img class="foto-aniversariante" src="./img/no-user.jpeg" alt="">
                                 </div>
-                                <div class="nome-aniversariante">
-                                    <div class="nome">
-                                        <p>Gustavo Tal e Coisa</p>
-                                        <span>email@talecoisa</span>
+                                <div class="conteudo-aniversariante">
+                                    <div class="aniversariante-nome">
+                                        <p>Usuário Padrão</p>
+                                    </div>
+                                    <div class="aniversariante-email">
+                                        <p>email@padrão.com.br</p>
                                     </div>
                                     <div class="bolo-e-data">
                                         <div class="bolo-icone">
@@ -369,14 +626,16 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="foto-nome">
-                                <div class="icone-foto">
-                                    <img src="../exercicio-site-DBC/img/esquilo.png">
+                            <div class="conteudo-aniversario">
+                                <div class="conteudo-foto-aniversariante">
+                                    <img class="foto-aniversariante" src="./img/no-user.jpeg" alt="">
                                 </div>
-                                <div class="nome-aniversariante">
-                                    <div class="nome">
-                                        <p>Gustavo Tal e Coisa</p>
-                                        <span>email@talecoisa</span>
+                                <div class="conteudo-aniversariante">
+                                    <div class="aniversariante-nome">
+                                        <p>Usuário Padrão</p>
+                                    </div>
+                                    <div class="aniversariante-email">
+                                        <p>email@padrão.com.br</p>
                                     </div>
                                     <div class="bolo-e-data">
                                         <div class="bolo-icone">
@@ -386,21 +645,16 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </section>
-                    <section class="aniversarios-proximos">
-                        <div class="container-proximo-aniversario">
-                            <div class="proximos-aniversarios">
-                                <p>Próximos aniversários</p>
-                            </div>
-                            <div class="foto-nome">
-                                <div class="icone-foto">
-                                    <img src="../exercicio-site-DBC/img/esquilo.png">
+                            <div class="conteudo-aniversario">
+                                <div class="conteudo-foto-aniversariante">
+                                    <img class="foto-aniversariante" src="./img/no-user.jpeg" alt="">
                                 </div>
-                                <div class="nome-aniversariante">
-                                    <div class="nome">
-                                        <p>Gustavo Tal e Coisa</p>
-                                        <span>email@talecoisa</span>
+                                <div class="conteudo-aniversariante">
+                                    <div class="aniversariante-nome">
+                                        <p>Usuário Padrão</p>
+                                    </div>
+                                    <div class="aniversariante-email">
+                                        <p>email@padrão.com.br</p>
                                     </div>
                                     <div class="bolo-e-data">
                                         <div class="bolo-icone">
@@ -410,59 +664,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="foto-nome">
-                                <div class="icone-foto">
-                                    <img src="../exercicio-site-DBC/img/esquilo.png">
-                                </div>
-                                <div class="nome-aniversariante">
-                                    <div class="nome">
-                                        <p>Gustavo Tal e Coisa</p>
-                                        <span>email@talecoisa</span>
-                                    </div>
-                                    <div class="bolo-e-data">
-                                        <div class="bolo-icone">
-                                            <i class="fa-solid fa-cake-candles"></i>
-                                            <span>17 de fevereiro</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="foto-nome">
-                                <div class="icone-foto">
-                                    <img src="../exercicio-site-DBC/img/esquilo.png">
-                                </div>
-                                <div class="nome-aniversariante">
-                                    <div class="nome">
-                                        <p>Gustavo Tal e Coisa</p>
-                                        <span>email@talecoisa</span>
-                                    </div>
-                                    <div class="bolo-e-data">
-                                        <div class="bolo-icone">
-                                            <i class="fa-solid fa-cake-candles"></i>
-                                            <span>17 de fevereiro</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="foto-nome">
-                                <div class="icone-foto">
-                                    <img src="../exercicio-site-DBC/img/esquilo.png">
-                                </div>
-                                <div class="nome-aniversariante">
-                                    <div class="nome">
-                                        <p>Gustavo Tal e Coisa</p>
-                                        <span>email@talecoisa</span>
-                                    </div>
-                                    <div class="bolo-e-data">
-                                        <div class="bolo-icone">
-                                            <i class="fa-solid fa-cake-candles"></i>
-                                            <span>17 de fevereiro</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
+                        </section>
+                    </div>
                 </div>
             </div>
         </main>

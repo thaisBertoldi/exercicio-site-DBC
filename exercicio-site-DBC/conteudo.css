@@ -4,7 +4,8 @@
 *::after {
   box-sizing: border-box;
 }
-* {
+*,
+i {
   margin: 0;
   padding: 0;
 }
@@ -43,13 +44,13 @@ img {
   background-color: #fff;
   border-bottom: 1px solid #d9d9d9cb;
 }
-.barra-latera-titulo {
+.barra-lateral-titulo {
   width: 16px;
   height: 45px;
   background-color: #f1f1f1;
 }
 .titulo-noticia {
-  font-weight: normal;
+  font-weight: bold;
   margin-left: 16px;
 }
 .noticias-recentes {
@@ -125,6 +126,9 @@ img {
   flex-direction: column;
   align-items: center;
 }
+.conteudo-icone i {
+  margin-bottom: 4px;
+}
 
 .conteudo-icone:hover {
   cursor: pointer;
@@ -140,12 +144,186 @@ img {
   background: linear-gradient(to right, #2ba962 0%, #2e6a99 98%, #2e6a99 100%);
 }
 
-.conteudo-icone:hover,
-.conteudo-icone:hover i {
-  color: #fff !important;
-}
-
 .data-emoji-noticia {
   justify-content: space-between;
   display: flex;
+  width: 100%;
+}
+.emoji-noticia {
+  display: flex;
+}
+
+.data-noticia {
+  font-size: 12px;
+  color: #b6b6b6;
+}
+
+.emoji-coracao i {
+  color: red;
+}
+.emoji-visualizacao i,
+.emoji-comentario i {
+  color: #e0e0e0;
+}
+
+.contador-emoji {
+  font-size: 12px;
+  font-weight: bold;
+  color: #a7a7a7;
+}
+.like,
+.comentario {
+  margin-right: 8px;
+}
+
+.aniversarios {
+  overflow-y: scroll;
+  height: 1000px;
+}
+.container-aniversario {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+}
+.conteudo-aniversario {
+  min-height: 100px;
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  border-bottom: 1px solid #d9d9d9cb;
+}
+
+.conteudo-foto-aniversariante {
+  padding: 16px;
+}
+.foto-aniversariante {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+}
+.conteudo-aniversariante {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 16px 0px 16px;
+}
+.aniversariante-nome {
+  margin-bottom: 10px;
+}
+.aniversariante-nome p {
+  font-weight: bold;
+}
+
+.bolo-icone i {
+  color: #7e7e7e;
+}
+.bolo-icone span {
+  color: #b1b1b1;
+}
+
+@media screen and (max-width: 1180px) {
+  .container-conteudo {
+    flex-direction: column;
+  }
+  .menu-e-aniversario {
+    order: -1;
+    width: 100%;
+  }
+  .aniversarios {
+    display: flex;
+    justify-content: space-between;
+    overflow-y: hidden;
+    height: auto;
+  }
+  .aniversarios-proximos {
+    margin-top: 16px;
+  }
+  .aniversarios-recentes,
+  .aniversarios-proximos {
+    width: calc(50% - 8px);
+  }
+  .noticias-recentes {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .menu-icone {
+    width: 50%;
+  }
+  .icones-user-notificacao,
+  #icone-pesquisa,
+  #icone-dbc {
+    display: none;
+  }
+  .cabecalho {
+    width: 100%;
+    justify-content: space-between;
+  }
+  #searchbar {
+    justify-self: end;
+    position: static;
+  }
+  .aniversarios {
+    display: block;
+    height: auto;
+  }
+  .aniversarios-recentes {
+    width: 100%;
+  }
+  .aniversarios-proximos {
+    width: 100%;
+  }
+  .conteudo-titulo {
+    justify-content: center;
+    align-items: center;
+  }
+  .barra-lateral-titulo {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .cabecalho {
+    flex-direction: column;
+  }
+  .noticias-recentes {
+    display: flex;
+    flex-direction: column;
+  }
+  .conteudo-noticias {
+    margin-right: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .noticia {
+    display: flex;
+    justify-content: center;
+  }
+  .noticia img {
+    width: 100%;
+    max-width: 70%;
+    height: 400px;
+  }
+  .conteudo-noticias {
+    flex-direction: column;
+    height: auto;
+  }
+  .titulo-noticia {
+    font-size: 24px;
+  }
+  .conteudo-noticia-titulo {
+    font-size: 24px;
+    text-align: center;
+  }
+  .texto-noticia {
+    text-align: justify;
+    font-size: 20px;
+    padding: 4px;
+  }
+  .data-emoji-noticia {
+    margin-top: 8px;
+    font-size: 16px;
+  }
 }
