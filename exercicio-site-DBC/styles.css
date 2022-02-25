@@ -92,7 +92,7 @@ nav {
     font-size: 30px;
 }
 
-/* --- Aniversário --- */
+/* --- Aniversário Recentes --- */
 
 .aniversarios-recentes {
     border-bottom: 1px solid #d9d9d9cb;
@@ -126,10 +126,12 @@ nav {
 .foto-nome {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid #d9d9d9cb;
 }
 
 .icone-foto {
-    width: 50%;
+    width: 45%;
 }
 
 .nome p { 
@@ -139,41 +141,27 @@ nav {
     padding: 0 auto;
 }
 
-/* .container-aniversario {  
-    display: grid;
-    grid-template-columns: 1fr 2.0fr 0.6fr;
-    grid-template-rows: 0.2fr 0.5fr 2.3fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "ultimos-aniversarios ultimos-aniversarios ."
-      "icone-foto nome-aniversariante ."
-      ". . .";
-  }
-  
-  .ultimos-aniversarios { grid-area: ultimos-aniversarios; }
-  
-  .icone-foto { grid-area: icone-foto; }
-  
-  .nome-aniversariante {  
-    display: grid;
-    grid-template-columns: 2.9fr 0.1fr 1fr;
-    grid-template-rows: 1fr 2.3fr 0.1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "nome . ."
-      "bolo-e-data . ."
-      ". . .";
-    grid-area: nome-aniversariante;
-  }
-  
-  .nome { 
-      grid-area: nome; 
-      font-family: 'Times New Roman', Times, serif;
-      font-size: 20px;
+/* --- Próximos Aniversários --- */ 
+
+.aniversarios-proximos {
+    border-bottom: 1px solid #d9d9d9cb;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    background-color: #fff;
+    padding: 16px 16px 16px 16px;
 }
-  
-  .bolo-e-data { grid-area: bolo-e-data; } */
-  
-  
+
+.container-proximo-aniversario {
+    display: flex;
+    flex-direction: column;
+}
+
+.proximos-aniversarios {
+    display: flex;
+    border-bottom: 1px solid #d9d9d9cb;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 15px;
+}
